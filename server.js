@@ -20,6 +20,6 @@ server.get('/', (req, res) => {
 module.exports = server;
 
 function logger(req, res, next) {
-  // console.log(`${req.method} Request to ${req.originalUrl}`);
+  console.log(`${req.method} Request to ${req.originalUrl}`);
   next();
 }
